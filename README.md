@@ -34,6 +34,7 @@ Hides tab bar.  For use with addons like Tab Center Redux, Tree Tabs, Sea Contai
 ---
 
 [Tab Center Redux Tweaks](https://github.com/Isaac-Newt/userChrome-styles/blob/master/Styles/userChromeTabCenter.css)
+---
 Hides the sidebar header and auto-minimizes the sidebar, similar to the original Tab Center behavior.
 
 ![Tab Center Tweaks Style](https://media.giphy.com/media/v0zFsLWnVRpn2/giphy.gif)
