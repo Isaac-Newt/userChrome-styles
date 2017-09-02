@@ -8,12 +8,13 @@ A collection of userChrome.css styles for Firefox.  Recommended for Firefox 57+
   - [Tabs on Bottom](https://github.com/Isaac-Newt/userChrome-styles#tabs-on-bottom)
   - [Hide Tab Bar](https://github.com/Isaac-Newt/userChrome-styles#hide-tab-bar)
 ### Tiny Tweaks (Just little things, usually compliment other styles)
-  - none yet :(
+  - [Tab Center Redux Tweaks](https://github.com/Isaac-Newt/userChrome-styles#tab-center-redux-tweaks)
 ---
 
 [Safari](https://github.com/Isaac-Newt/userChrome-styles/blob/master/Styles/userChromeSafari.css)
 ---
 Imitates the style of Safari on MacOS. Currently tested on MacOS, should work on Linux and Windows without much issue.
+
 ![Safari style](images/safari.png)
 
 ---
@@ -21,11 +22,18 @@ Imitates the style of Safari on MacOS. Currently tested on MacOS, should work on
 [Tabs On Bottom](https://github.com/Isaac-Newt/userChrome-styles/blob/master/Styles/userChromeBottom.css)
 ---
 Simply moves tabs to the bottom.
+
 ![Tabs On Bottom Style](images/bottom.png)
 
 [Hide Tab Bar (Tabs in sidebar)](https://github.com/Isaac-Newt/userChrome-styles/blob/master/Styles/userChromeHidetabs.css)
 ---
 Hides tab bar.  For use with addons like Tab Center Redux, Tree Tabs, Sea Containers, etc.
+
 ![Sidebar Tabs Style](images/sidetabs.png)
 
 ---
+
+[Tab Center Redux Tweaks](https://github.com/Isaac-Newt/userChrome-styles/blob/master/Styles/userChromeTabCenter.css)
+Hides the sidebar header and auto-minimizes the sidebar, similar to the original Tab Center behavior.
+
+![Tab Center Tweaks Style](https://media.giphy.com/media/v0zFsLWnVRpn2/giphy.gif)
