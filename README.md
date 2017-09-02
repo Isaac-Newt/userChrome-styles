@@ -11,18 +11,21 @@ A collection of userChrome.css styles for Firefox.  Recommended for Firefox 57+
   - none yet :(
 ---
 
-[Safari](https://github.com/Isaac-Newt/userChrome-styles/blob/master/userChromeSafari.css)
+[Safari](https://github.com/Isaac-Newt/userChrome-styles/blob/master/Styles/userChromeSafari.css)
 ---
 Imitates the style of Safari on MacOS. Currently tested on MacOS, should work on Linux and Windows without much issue.
 ![Safari style](images/safari.png)
 
-[Tabs On Bottom](https://github.com/Isaac-Newt/userChrome-styles/blob/master/userChromeBottom.css)
+---
+
+[Tabs On Bottom](https://github.com/Isaac-Newt/userChrome-styles/blob/master/Styles/userChromeBottom.css)
 ---
 Simply moves tabs to the bottom.
 ![Tabs On Bottom Style](images/bottom.png)
 
-[Hide Tab Bar (Tabs in sidebar)](https://github.com/Isaac-Newt/userChrome-styles/blob/master/userChromeHidetabs.css)
+[Hide Tab Bar (Tabs in sidebar)](https://github.com/Isaac-Newt/userChrome-styles/blob/master/Styles/userChromeHidetabs.css)
 ---
 Hides tab bar.  For use with addons like Tab Center Redux, Tree Tabs, Sea Containers, etc.
 ![Sidebar Tabs Style](images/sidetabs.png)
 
+---
