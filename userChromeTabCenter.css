@@ -1,0 +1,26 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+ 
+/* This style provides a couple tweaks for making the Tab Center Redux 
+ * addon more like the original Tab Center. It will hide the sidebar header 
+ * (remove if you use other sidebar functionality) and auto-collapse the 
+ * sidebar, a-la Tab Center. */
+
+/*Remove sidebar header*/
+#sidebar-header {
+  visibility: collapse !important;
+}
+
+/*autominimize sidebar*/
+#sidebar-box {
+    overflow-x: hidden;
+    min-width: 50px !important;
+    max-width: 50px !important;
+    transition: all 0.25s ease .25s !important;
+}
+
+#sidebar-box:hover {
+    min-width: 250px !important;
+    max-width: 250px !important;
+} 
