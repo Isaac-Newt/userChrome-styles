@@ -2,15 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-/*This style will hide the tab bar.
-*There are two styles, one for MacOS, and one for all other platforms, or if you're using a titlebar.
-*Comment out/delete the one you don't need
-*Currently tested on MacOS Sierra and Linux on Nightly
-*/
+/* This style will hide the tab bar.
+ * There are two styles, one for MacOS, and one for all other platforms,
+ * or if you're using a titlebar. Comment out/delete the one you don't need.
+ * Currently tested on MacOS Sierra and Linux on Nightly */
 
-/*Remove Tabs on MacOS
-*Comment this out, and use the other rule for other platforms, or if you choose to enable the titlebar
-*/
+/* Remove Tabs on MacOS
+ * Comment this out, and use the other rule for other platforms, or if you choose to enable the titlebar */
 
 #TabsToolbar {
   height: 22px !important;
@@ -36,9 +34,8 @@
   margin-top: 10.5px !important;
 }
 
-/*Hide tabs on Linux, Windoows, any with titlebar.  
-*Doesn't work right with MacOS, use the other one instead
-*/
+/* Hide tabs on Linux, Windoows, any with titlebar.
+ * Doesn't work right with MacOS, use the other one instead */
 
 #TabsToolbar {
 	visibility: collapse !important;

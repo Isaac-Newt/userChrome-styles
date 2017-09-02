@@ -1,0 +1,15 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* This style will merge the container indicator with the tab line,
+ * and show the container color of background tabs on hover */
+
+/*Indicators on top only on hover*/
+.tabbrowser-tab[usercontextid] .tabline {
+  background: var( --identity-tab-color) !important;
+}
+
+.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-bottom-line {
+  background: none !important;
+}
