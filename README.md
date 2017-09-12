@@ -25,7 +25,7 @@ Simply moves tabs to the bottom.
 
 ![Tabs On Bottom Style](images/bottom.png)
 
-[Hide Tab Bar (Tabs in sidebar)](https://github.com/Isaac-Newt/userChrome-styles/blob/master/Styles/userChromeHidetabs.css)
+[Hide Tab Bar (Tabs in sidebar)](https://github.com/Isaac-Newt/userChrome-styles/blob/master/Styles/userChomeHideTabs.css)
 ---
 Hides tab bar.  For use with addons like Tab Center Redux, Tree Tabs, Sea Containers, etc.
 
