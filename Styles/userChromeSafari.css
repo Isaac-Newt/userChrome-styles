@@ -6,7 +6,7 @@
 
 /*tabs on bottom*/
 #TabsToolbar {
-  -moz-box-ordinal-group: 2;
+  -moz-box-ordinal-group: 3;
 }
 #nav-bar{
   border-top-width: 0px !important;
@@ -19,6 +19,13 @@
 /*tab line hidden*/
 .tab-line {
   display: none !important;
+}
+
+/*Bookmarks Bar fix*/
+#PersonalToolbar {
+  -moz-box-ordinal-group: 2;
+  background: rgb(220, 220, 220) !important;
+  border-bottom: 1px solid #B1B1B1 !important;
 }
 
 /*remove extra space*/
