@@ -33,23 +33,16 @@
   padding-inline-start: 0px !important;
   margin-bottom: none !important;
 }
+
 #titlebar-placeholder-on-TabsToolbar-for-captions-buttons {
   display: none;
-}
-.box-inherit .scrollbox-innerbox {
-  margin-right: 0 !important;
-}
-#TabsToolbar .tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox
-{
-  padding-inline-start: 0px !important;
-  padding-inline-end: 0px !important;
 }
 
 /*full-width tabs*/
 #TabsToolbar .tabbrowser-tab[fadein]:not([pinned]) {
   flex-grow: 1 !important;
   min-width: 11em !important;
-  max-width: -moz-available !important;
+  max-width: 100% !important;
 }
 
 #TabsToolbar {
@@ -99,6 +92,11 @@
 }
 
 /*Heights*/
+
+/*
+ * Change the last padding value to 5px for Windows, Linux, or if 
+ * you're using the titlebar
+ */
 #nav-bar {
   height: 38px !important;
   padding: 0px 5px 0px 75px !important;
@@ -107,8 +105,7 @@
   margin-left: 0px !important;
   height: 24px !important;
 }
-#TabsToolbar .tab-content > *
-{
+#TabsToolbar .tab-content > * {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
 }
@@ -150,215 +147,6 @@
 }
 
 /* remove this weird extra separator mozilla tacks on before the page content */
-#navigator-toolbox::after
-{
+#navigator-toolbox::after {
   display: none !important;
-}
-
-/* 26x24 button = 24x23 icon plus 2x1 borders */
-#TabsToolbar #new-tab-button
-{
-  min-width: 26px !important;
-  min-height: 24px !important;
-  width: 26px !important;
-  height: 24px !important;
-  margin-left: -1px !important;
-  margin-right: 0px !important;
-  border-top: 0.5px solid rgba(162,160,162,.6) !important;
-  border-bottom: 0.5px solid rgba(162,160,162,.6) !important;
-  border-left: 1px solid rgba(162,160,162,.6) !important;
-  border-right: 1px solid rgba(162,160,162,.6) !important;
-  transition: filter 200ms !important;
-  background: linear-gradient(to bottom, rgba(100, 100, 100,.2), rgba(90, 90, 90,.22)) padding-box !important;
-    /* plus sign */
-  list-style-image: url('data:image/svg+xml;utf8,\
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22">\
-          <line x1="25%" y1="50%" x2="75%" y2="50%" stroke="rgb(105,103,105)" stroke-width="1"/>\
-          <line x1="50%" y1="25%" x2="50%" y2="75%" stroke="rgb(105,103,105)" stroke-width="1"/>\
-        </svg>') !important;
-  -moz-image-region: unset !important;
-}
-
-@media (max-resolution: 1.9dppx)
-{
-  #TabsToolbar #new-tab-button
-  {
-    list-style-image: url('data:image/svg+xml;utf8,\
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22">\
-          <line x1="25%" y1="50%" x2="75%" y2="50%" stroke="rgb(105,103,105)" stroke-width="2"/>\
-          <line x1="50%" y1="25%" x2="50%" y2="75%" stroke="rgb(105,103,105)" stroke-width="2"/>\
-          </svg>') !important;
-  }
-}
-/* 24x23 icon = 22x22 image plus 2x1 padding */
-#TabsToolbar #new-tab-button > .toolbarbutton-icon
-{
-  padding: 0.5px 1px !important;
-  width: 24px !important;
-  min-width: 24px !important;
-  min-height: 23px !important;
-  height: 23px !important;
-  border: unset !important;
-}
-
-#TabsToolbar #new-tab-button:hover:not([disabled]) > .toolbarbutton-icon,
-#TabsToolbar #alltabs-button:hover:not([disabled]) > .toolbarbutton-icon
-{
-  filter: brightness(60%);
-}
-
-#TabsToolbar #new-tab-button:hover:active:not([disabled])
-{
-  filter: brightness(95%) !important;
-}
-
-#TabsToolbar #alltabs-button
-{
-  min-width: 26px !important;
-  min-height: 24px !important;
-  width: 26px !important;
-  height: 24px !important;
-  margin-left: -1px !important;
-  margin-right: 0px !important;
-  border-top: 0.5px solid rgba(162,160,162,.6) !important;
-  border-bottom: 0.5px solid rgba(162,160,162,.6) !important;
-  border-left: 1px solid rgba(162,160,162,.6) !important;
-  border-right: 1px solid rgba(162,160,162,.6) !important;
-  transition: filter 200ms !important;
-  background: linear-gradient(to bottom, rgba(100, 100, 100,.2), rgba(90, 90, 90,.22)) padding-box !important;
-  -moz-image-region: unset !important;
-    /* downward chevron */
-  list-style-image: url('data:image/svg+xml;utf8,\
-       <svg xmlns="http://www.w3.org/2000/svg" width="36" height="40">\
-          <path d="M9,18 L18,26 L27,18" fill="transparent" stroke-linecap="round" stroke="rgb(105,103,105)" stroke-width="2.5"/>\
-       </svg>') !important;
-}
-
-@media (max-resolution: 1.9dppx)
-{
-  #TabsToolbar #alltabs-button
-  {
-    list-style-image: url('data:image/svg+xml;utf8,\
-       <svg xmlns="http://www.w3.org/2000/svg" width="36" height="40">\
-          <path d="M9,18 L18,26 L27,18" fill="transparent" stroke-linecap="round" stroke="rgb(105,103,105)" stroke-width="4"/>\
-       </svg>') !important;
-  }
-}
-
-#TabsToolbar #alltabs-button:-moz-any(:hover:active, [open]):not([disabled])
-{
-  filter: brightness(95%) !important;
-}
-
-/* These things suck, we'll do better with CSS3 effects */
-#TabsToolbar .arrowscrollbox-overflow-start-indicator,
-#TabsToolbar .arrowscrollbox-overflow-end-indicator {
-    display: none !important;
-}
-
-#TabsToolbar .scrollbutton-up {
-	background: linear-gradient(to bottom, rgba(100, 100, 100,.2), rgba(90, 90, 90,.22)) padding-box !important;
-    min-height: 24px !important;
-    height: 24px !important;
-    -moz-image-region: unset !important;
-    border-left: 1px solid rgba(162,160,162,.6) !important;
-    border-right: unset !important;
-    margin-left: -1px !important;
-    margin-right: 1px !important;
-    position: relative !important;
-    z-index: 3 !important;
-    filter: brightness(100%) !important;
-    box-shadow:
-        inset -0.5px 0px 0px 0.5px rgba(0,0,0,0.3),
-        3px 0px 3px -2px rgba(0,0,0,0.3);
-    transition: box-shadow 150ms ease-in-out, filter 200ms ease-in-out !important;
-    /* left pointing thick chevron */
-    list-style-image: url('data:image/svg+xml;utf8,\
-        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="20">\
-          <path d="M9.5,3.5 L3,10 L9.5,16.5" fill="transparent" stroke-width="3" stroke="rgb(125,122,125)"/>\
-        </svg>') !important;
-}
-@media (max-resolution: 1.9dppx) {
-    #TabsToolbar .scrollbutton-up {
-    list-style-image: url('data:image/svg+xml;utf8,\
-        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="20">\
-          <path d="M9.5,3.5 L3,10 L9.5,16.5" fill="transparent" stroke-width="4" stroke="rgb(125,122,125)"/>\
-        </svg>') !important;
-    }
-}
-
-#TabsToolbar .scrollbutton-up[disabled] {
-    filter: brightness(95%) !important;
-    /* box shadow "outer border", a cheap hack around weird margins when tabs are pinned */
-    box-shadow:
-        inset 0px 0px 0px 0px rgba(0,0,0,0),
-        1px 0px 0px 0px rgba(162,160,162,1);
-    border-top: 1px solid rgba(162,160,162,.6) !important;
-    border-bottom: 1px solid rgba(162,160,162,.6) !important;
-}
-#TabsToolbar .scrollbutton-up[disabled] > .toolbarbutton-icon,
-#TabsToolbar .scrollbutton-down[disabled] > .toolbarbutton-icon{
-    -moz-image-region: unset !important;
-}
-#TabsToolbar .scrollbutton-down {
-    background: linear-gradient(to bottom, rgba(100, 100, 100,.2), rgba(90, 90, 90,.22)) padding-box !important;
-    min-height: 24px !important;
-    height: 24px !important;
-    -moz-image-region: unset !important;
-    /* right pointing thick chevron */
-    border-left: unset !important;
-    border-right: 1px solid rgba(162,160,162,.6) !important;
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-    position: relative !important;
-    z-index: 3 !important;
-    filter: brightness(100%) !important;
-    box-shadow:
-        inset 0.5px 0px 0px 0.5px rgba(0,0,0,0.3),
-        -3px 0px 3px -2px rgba(0,0,0,0.3);
-    transition: box-shadow 200ms ease-in-out, filter 200ms ease-in-out !important;
-    list-style-image: url('data:image/svg+xml;utf8,\
-        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="20">\
-          <path d="M3.5,3.5 L10,10 L3.5,16.5" fill="transparent" stroke-width="3" stroke="rgb(125,122,125)"/>\
-        </svg>') !important;
-}
-@media (max-resolution: 1.9dppx) {
-    #TabsToolbar .scrollbutton-down {
-    list-style-image: url('data:image/svg+xml;utf8,\
-        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="20">\
-          <path d="M3.5,3.5 L10,10 L3.5,16.5" fill="transparent" stroke-width="4" stroke="rgb(125,122,125)"/>\
-        </svg>') !important;
-    }
-}
-
-#TabsToolbar .scrollbutton-down:hover:not([disabled]),
-#TabsToolbar .scrollbutton-up:hover:not([disabled]) {
-    -moz-image-region: unset !important;
-}
-#TabsToolbar .scrollbutton-down:hover:not([disabled]) > .toolbarbutton-icon,
-#TabsToolbar .scrollbutton-up:hover:not([disabled]) > .toolbarbutton-icon {
-    filter: brightness(80%) !important;
-}
-#TabsToolbar .scrollbutton-down[disabled] {
-    filter: brightness(95%) !important;
-    margin-left: -1px !important;
-    border-left: 1px solid rgba(162,160,162,.6) !important;
-    border-top: 1px solid rgba(162,160,162,.6) !important;
-    border-bottom: 1px solid rgba(162,160,162,.6) !important;
-    box-shadow: unset !important;
-}
-#TabsToolbar *:-moz-any(.scrollbutton-up, .scrollbutton-down):hover:active:not([disabled]) {
-    filter: brightness(95%) !important;
-}
-
-#TabsToolbar .tabs-newtab-button:-moz-window-inactive,
-#TabsToolbar #new-tab-button:-moz-window-inactive,
-#TabsToolbar #alltabs-button:-moz-window-inactive,
-#TabsToolbar .scrollbutton-up:-moz-window-inactive,
-#TabsToolbar .scrollbutton-down:-moz-window-inactive {
-    background: rgb(236,236,236) !important;
-    opacity: 0.5 !important;
-    transition: unset !important;
-    border-color: rgba(192,191,192,1) !important;
-    filter: brightness(100%) !important;
 }
