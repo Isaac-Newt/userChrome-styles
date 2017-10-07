@@ -7,6 +7,7 @@ A collection of userChrome.css styles for Firefox.  Recommended for Firefox 57+
 ### UI Modifications (less complex)
   - [Tabs on Bottom](https://github.com/Isaac-Newt/userChrome-styles#tabs-on-bottom)
   - [Hide Tab Bar](https://github.com/Isaac-Newt/userChrome-styles#hide-tab-bar)
+  - [Container Colors Photon](https://github.com/Isaac-Newt/userChrome-styles#container-colors-photon)
 ### Tiny Tweaks (Just little things, usually compliment other styles)
   - [Tab Center Redux Tweaks](https://github.com/Isaac-Newt/userChrome-styles#tab-center-redux-tweaks)
 ---
@@ -30,6 +31,12 @@ Simply moves tabs to the bottom.
 Hides tab bar.  For use with addons like Tab Center Redux, Tree Tabs, Sea Containers, etc.
 
 ![Sidebar Tabs Style](images/sidetabs.png)
+
+[Container Colors Photon](https://github.com/Isaac-Newt/userChrome-styles/blob/master/Styles/userChromeHoverColor.css)
+---
+Moves container indicator lines to top of tab, shows only on hover in a nice animation.
+
+![Container Colors on Hover](images/colors.png)
 
 ---
 

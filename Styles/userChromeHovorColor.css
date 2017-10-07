@@ -6,10 +6,42 @@
  * and show the container color of background tabs on hover */
 
 /*Indicators on top only on hover*/
-.tabbrowser-tab[usercontextid] .tabline {
-  background: var( --identity-tab-color) !important;
+.tab-bottom-line{
+  display:none!important;
 }
 
-.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-bottom-line {
-  background: none !important;
+.tabbrowser-tab[usercontextid] .tab-line{
+  background: var(--identity-tab-color) !important;
+  transform: scaleX(.8) !important;
+  opacity: .7 !important;
+  height: 0px !important;
+  border-radius: 0 0 2px 2px !important;
 }
+
+.tabbrowser-tab[usercontextid][pinned] .tab-line{
+  transform: scaleX(.55) !important;
+}
+
+.tabbrowser-tab[usercontextid]:not([visuallyselected]):hover .tab-line{
+  border-radius: 0 !important;
+  height: 2px !important;
+  transform:scaleX(1)!important;
+  opacity: .8 !important;
+}
+
+.tabbrowser-tab[usercontextid][visuallyselected] .tab-line{
+  border-radius: 0 !important;
+  height: 2px !important;
+  transform: scaleX(1) !important;
+  opacity: 1 !important;
+}
+
+/*Loading flash use container color*/
+.tabbrowser-tab{
+  --tab-loading-fill: Highlight !important;
+}
+
+.tabbrowser-tab[usercontextid]{
+  --tab-loading-fill: var(--identity-tab-color) !important;
+}
+ 
