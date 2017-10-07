@@ -1,0 +1,17 @@
+/*Remove sidebar header*/
+#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] > #sidebar-header {
+  display: none !important;
+}
+
+/*autominimize sidebar reflow*/
+#sidebar-box {
+    overflow-x: hidden;
+    min-width: 50px !important;
+    max-width: 50px !important;
+    transition: all 0.25s ease .25s !important;
+}
+
+#sidebar-box:hover {
+    min-width: 250px !important;
+    max-width: 250px !important;
+}

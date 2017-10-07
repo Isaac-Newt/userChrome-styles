@@ -1,0 +1,54 @@
+/*Hide Tab Bar*/
+#TabsToolbar {
+  visibility: collapse !important;
+}
+
+#nav-bar {
+  margin-left: 32px;
+  padding: 0px !important;
+}
+  
+/*autominimize sidebar*/
+#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] {
+  overflow: hidden;
+  min-width: 32px !important;
+  max-width: 32px !important;
+  position: fixed;
+  top: 0px;
+  transition: all 0.25s ease .25s !important;
+  z-index: 1;
+  border-right: 1px solid lightgrey;
+  border-top: 1px solid grey;
+}
+
+#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"]:hover,
+#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] #sidebar {
+  min-width: 200px !important;
+  max-width: 200px !important;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] #sidebar-header {
+  display: none !important;
+}
+
+#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] #sidebar {
+  height: calc(100vh - 0px);
+}
+
+#sidebar-splitter {
+  width: 1px !important;
+}
+
+#appcontent {
+  margin-left: 27px;
+}
+
+#main-window[inFullscreen] #sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] {
+  top: 0;
+  height: 100vh;
+}
+
+#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] #sidebar {
+  height: 100vh;
+}
