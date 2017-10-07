@@ -35,7 +35,7 @@
 /*position window controls.  Only for MacOS, comment out for Linux/Windows*/
 #titlebar-buttonbox-container {
   margin-left: 5px !important;
-  margin-top: 10.5px !important;
+  margin-top: 5px !important;
 }
 
 /*tab line match container color, show on hover on background tabs*/
