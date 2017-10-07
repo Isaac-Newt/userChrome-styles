@@ -1,0 +1,24 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* change up usercontext label */
+#userContext-icons{
+  background:var(--identity-tab-color)!important;
+  margin:auto 3px!important;
+  border-radius:2px!important;
+  padding:0 2px 0 5px!important;
+}
+
+#userContext-label{
+  color:#fff!important;
+}
+
+#userContext-indicator{
+  fill:#fff!important;
+  margin-right:2px!important;
+}
+
+#userContext-indicator[data-identity-icon="circle"]{
+  display:none!important;
+}
