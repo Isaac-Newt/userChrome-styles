@@ -9,11 +9,16 @@
 
 /*Tabs On Bottom*/
 #TabsToolbar {
-  -moz-box-ordinal-group: 2;
+  -moz-box-ordinal-group: 3;
 }
 #nav-bar{
   border-top-width: 0px !important;
   padding: 0px 5px 0px 75px !important; /*The 75px is a fix for MacOS to make room for the window controls*/
+}
+
+/*Bookmarks Bar fix*/
+#PersonalToolbar {
+  -moz-box-ordinal-group: 2;
 }
 
 /*Remove extra tab bar space*/
@@ -36,15 +41,4 @@
 #titlebar-buttonbox-container {
   margin-left: 5px !important;
   margin-top: 5px !important;
-}
-
-/*tab line match container color, show on hover on background tabs*/
-.tabbrowser-tab[usercontextid] .tab-line{
-    background-color:var(--identity-tab-color)!important;
-}
-.tabbrowser.tab[usercontextid] .tab-line {
-  background:var(--identity-tab-color) !important;
-}
-.tabbrowser-tab[usercontextid] > .tab-stack > .tab-background > .tab-bottom-line {
-  background: none !important;
 }
