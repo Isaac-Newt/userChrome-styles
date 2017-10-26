@@ -26,15 +26,8 @@
   padding-inline-start: 0px !important;
   margin-bottom: none !important;
 }
-#titlebar-placeholder-on-TabsToolbar-for-captions-buttons {
+.titlebar-placeholder {
   display: none;
-}
-.box-inherit .scrollbox-innerbox {
-  margin-right: 0 !important;
-}
-#TabsToolbar .tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox {
-  padding-inline-start: 0px !important;
-  padding-inline-end: 0px !important;
 }
 
 /*position window controls.  Only for MacOS, comment out for Linux/Windows*/
