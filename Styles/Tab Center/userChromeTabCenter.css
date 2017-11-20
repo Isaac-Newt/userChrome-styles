@@ -43,8 +43,8 @@
   width: 1px !important;
 }
 
-#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] #appcontent {
-  margin-left: 35px;
+#appcontent {
+  margin-left: 35px !important;
 }
 
 #main-window[inFullscreen] #sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] {
