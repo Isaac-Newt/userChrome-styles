@@ -8,8 +8,7 @@
 }
 
 #nav-bar {
-  margin-left: 32px;
-  padding: 0px !important;
+  padding: 0 0 0 34px;
 }
 
 /*autominimize sidebar*/
@@ -21,8 +20,8 @@
   top: 0px;
   transition: all 0.25s ease .25s !important;
   z-index: 1;
-  border-right: 1px solid lightgrey;
-  border-top: 1px solid grey;
+  border-right: 1px solid lightgray;
+  border-top: 1px solid gray;
 }
 
 #sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"]:hover,
@@ -37,15 +36,15 @@
 }
 
 #sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] #sidebar {
-  height: calc(100vh - 0px);
+  height: calc(100vh);
 }
 
 #sidebar-splitter {
   width: 1px !important;
 }
 
-#appcontent {
-  margin-left: 27px;
+#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] #appcontent {
+  margin-left: 35px;
 }
 
 #main-window[inFullscreen] #sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] {
