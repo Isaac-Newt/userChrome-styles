@@ -28,13 +28,13 @@
   border-bottom: 1px solid #B1B1B1 !important;
 }
 
-/*remove extra space*/
+/*Remove extra tab bar space*/
 #TabsToolbar {
   padding-inline-start: 0px !important;
   margin-bottom: none !important;
 }
 
-#titlebar-placeholder-on-TabsToolbar-for-captions-buttons {
+.titlebar-placeholder {
   display: none;
 }
 
